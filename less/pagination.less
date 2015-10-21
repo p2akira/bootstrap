@@ -7,6 +7,19 @@
   margin: @line-height-computed 0;
   border-radius: @border-radius-base;
 
+  li a {
+    min-width: 20px;
+  }
+
+  li.active {
+    a, a:hover, a:active {
+      background-color: #005580;
+      color: #fff;
+    }
+  }
+
+
+
   > li {
     display: inline; // Remove list-style and block-level defaults
     > a,

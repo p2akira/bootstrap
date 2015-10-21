@@ -4713,6 +4713,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin: 21px 0;
   border-radius: 2px;
 }
+.pagination li a {
+  min-width: 20px;
+}
+.pagination li.active a,
+.pagination li.active a:hover,
+.pagination li.active a:active {
+  color: #fff;
+  background-color: #005580;
+}
 .pagination > li {
   display: inline;
 }
