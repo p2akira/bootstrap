@@ -270,8 +270,13 @@
   #gradient > .vertical(@start-color: @color; @end-color: darken(@color, 5%));
 }
 
+.panel-heading-styles-bdb(@color) {
+  #gradient > .vertical(@start-color: #274762; @end-color: #3E6b95);
+}
+
 // Apply the mixin to the panel headings only
-.panel-default > .panel-heading   { .panel-heading-styles(@panel-default-heading-bg); }
+//.panel-default > .panel-heading   { .panel-heading-styles(@panel-default-heading-bg); }
+.panel-default > .panel-heading   { .panel-heading-styles-bdb(@panel-default-heading-bg); }
 .panel-primary > .panel-heading   { .panel-heading-styles(@panel-primary-heading-bg); }
 .panel-success > .panel-heading   { .panel-heading-styles(@panel-success-heading-bg); }
 .panel-info > .panel-heading      { .panel-heading-styles(@panel-info-heading-bg); }
